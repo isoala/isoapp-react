@@ -1,0 +1,327 @@
+
+
+.portfolio-container {
+  display: flex;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+body {
+  background-color: #0f172a;
+}
+.sidebar {
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  position: fixed;
+  min-height: 100vh;
+}
+.main-content {
+  width: 55%;
+  overflow-y: auto; /* Changed from scroll to auto for better behavior */
+  padding: 20px;
+  align-items: center;
+  text-align: left;
+  margin-left: 45%;
+  margin-right: 40px;
+}
+.main-content h2 {
+  line-height: 1.6;
+  margin-top: 35px;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem; /* Slightly larger for better readability */
+}
+.main-content p {
+  line-height: 1.6;
+  color: rgb(148, 163, 184);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar h1 {
+  margin-bottom: 5px;
+}
+.name {
+  color: #e5e7eb;
+  line-height: 2.25;
+  margin-top: 17px;
+  margin-left: 100px;
+  font-size: 50px;
+  font-weight: 775;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #e5e7eb;
+  margin-top: -20px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+}
+
+.description {
+  line-height: 1.6;
+  /*color: #71717a;*/
+  color: rgb(148, 163, 184);
+  margin-top: -2px;
+  margin-left: 100px;
+  margin-right: 150px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about {
+  line-height: 1.6;
+  color: rgb(148, 163, 184);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about p {
+  color: rgb(148, 163, 184);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.profile-image {
+  width: 305px;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  margin-left: 100px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+ 
+.social-links {
+  display: flex;
+  gap: 22px; /* Space between icons */
+  margin-top: 75px; /* Adjust top margin */
+  margin-left: 102px;
+  margin-bottom: 0px; /* Space from the bottom of the sidebar */
+}
+
+.social-links a {
+  display: inline-block; /* Prevent icons from stacking */
+}
+
+.social-links img {
+  width: 25px; /* Adjust icon size as needed */
+  height: 25px;
+  opacity: 0.7; /* Slightly faded initially */
+  transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+  opacity: 1; /* Fully visible on hover */
+}
+
+.section {
+  margin-bottom: 40px;
+  padding-top: 20px; /* Add some top padding for spacing from previous sections */
+}
+
+.section h2 {
+  border-bottom: 2px solid #4a5568; /* Darker border for better contrast */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem; /* Slightly larger section titles */
+}
+
+.experience-item {
+  margin-bottom: 25px;
+}
+
+.experience-item h3 {
+  margin-bottom: 5px;
+  color: #f3f4f6; /* Lighter text for job titles */
+  font-weight: 350px;
+  font-size: 18px;
+}
+
+.duration {
+  color: #a1a1aa; /* Muted color for duration */
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #d4d4d8; /* Lighter text for list items */
+}
+
+.project-item {
+  margin-bottom: 30px;
+  border: 1px solid #374151; /* Darker border for project items */
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #1e293b; /* Darker background for project items */
+}
+
+.project-item h3 {
+  margin-bottom: 10px;
+  color: #f3f4f6;
+  font-weight: bold;
+}
+
+.project-item .description {
+  margin-bottom: 10px;
+  color: #d4d4d8;
+}
+
+.project-item a {
+  margin-right: 10px;
+  color: #8ab4f8; /* Example link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: #bdd7ff; /* Lighter link color on hover */
+}
+
+.contact-form {
+  margin-top: 20px;
+  padding-right: 50px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f3f4f6;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #d4d4d8;
+}
+
+.form-group textarea {
+  min-height: 100px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+/* Basic styling for sections to ensure spacing */
+.section {
+  padding: 0px;
+}
+
+/* Navigation Styles with Button Styling */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem; /* Adjust mt-6 equivalent */
+  width: fit-content; /* Match ul width */
+  margin-left: 100px; /* Keep the margin */
+}
+
+.nav li {
+  margin-bottom: 0.7em; /* Adjust spacing between links */
+}
+
+.nav-button { /* Apply the button styles to this class */
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Remove default link underline */
+  display: inline-flex; /* To center the text inside */
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Reset padding that might interfere with size */
+  overflow: hidden; /* Clip the pseudo-elements */
+}
+
+
+
+.nav-button:hover::before, .nav-button:hover::after {
+  transform: scale(0);
+}
+
+.nav-button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.nav-indicator {
+  display: none; /* Hide the original indicator if you had one */
+}
+.main-content li{
+  padding-bottom: 5px;
+}
+.link-icon{
+  padding-left: 5px;
+  margin-bottom:-5px;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.inline-block{
+  width: 1.75rem;
+  height: 1.75rem;
+  color: rgb(229, 231, 235);
+}
+.color-white{
+  width: 1.75rem;
+  height: 1.75rem;
+  color: rgb(229, 231, 235);
+}
+.link-icon:hover{
+  color: teal;
+}
+
+.link-icon:bg-teal-300 ::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 234 212/var(--tw-bg-opacity));
+}
+.final p{
+  color: rgb(148, 163, 184);
+  font-size: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bold{
+  color: (229, 231, 235);
+  font-size: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
