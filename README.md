@@ -16,7 +16,7 @@ Key sections include:
 ## Screenshots
 
 **Example 1: Homepage**
-![Projects Screenshot](isoapp/demo/app-screenshot-2.jpg)
+![Projects Screenshot](https://github.com/isoala/isoapp-react/blob/main/demo/app-screenshot-2.jpg)
 
 **Example 1: Experience**
-![Projects Screenshot](isoapp/demo/app-screenshot.jpg)
+![Projects Screenshot](https://github.com/isoala/isoapp-react/blob/main/demo/app-screenshot.jpg)
